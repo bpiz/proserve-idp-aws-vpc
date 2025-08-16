@@ -1,0 +1,29 @@
+# Example Pulumi stack configuration for development environment
+# Copy this file to Pulumi.dev.yaml and customize for your environment
+#
+# Usage:
+# 1. Copy this file: cp Pulumi.dev.yaml.example Pulumi.dev.yaml
+# 2. Customize the values for your environment
+# 3. Run: pulumi stack select dev
+# 4. Run: pulumi up
+
+config:
+  # AWS Configuration
+  aws:region: us-west-2
+  
+  # Component-specific configuration
+  proserve-idp:environment: development
+  proserve-idp:projectName: my-vpc-project
+  proserve-idp:stackName: dev
+  
+  # VPC Configuration
+  vpc:cidrBlock: "10.0.0.0/16"
+  vpc:enableDnsHostnames: "true"
+  vpc:enableDnsSupport: "true"
+  
+  # Subnet Configuration
+  vpc:publicSubnetCidrs: '["10.0.1.0/24", "10.0.2.0/24"]'
+  vpc:privateSubnetCidrs: '["10.0.10.0/24", "10.0.11.0/24"]'
+  
+  # Tags
+  vpc:tags: '{"Environment": "development", "Project": "my-vpc-project", "ManagedBy": "pulumi"}'

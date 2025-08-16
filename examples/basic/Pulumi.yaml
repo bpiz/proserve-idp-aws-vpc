@@ -1,0 +1,3 @@
+name: aws-vpc-basic-example
+runtime: nodejs
+description: Basic example of the AWS VPC component 

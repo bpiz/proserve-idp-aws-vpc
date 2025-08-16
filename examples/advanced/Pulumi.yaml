@@ -1,0 +1,3 @@
+name: aws-vpc-advanced-example
+runtime: nodejs
+description: Advanced example of the AWS VPC component with 3 AZs and production settings 
