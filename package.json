@@ -1,6 +1,6 @@
 {
-  "name": "@proserve/aws-vpc",
-  "version": "0.1.4",
+  "name": "aws-vpc",
+  "version": "0.1.5",
   "description": "Enterprise-ready AWS VPC component with security best practices",
   "main": "src/index.ts",
   "scripts": {
