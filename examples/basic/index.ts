@@ -1,5 +1,4 @@
-import * as pulumi from "@pulumi/pulumi";
-import { Vpc } from "../../src";
+import { Vpc } from "../../dist/index";
 
 // Create a basic VPC with public and private subnets
 const vpc = new Vpc("example-vpc", {

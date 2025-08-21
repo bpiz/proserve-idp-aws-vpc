@@ -1,5 +1,4 @@
-import * as pulumi from "@pulumi/pulumi";
-import { Vpc } from "../../src";
+import { Vpc } from "../../dist/index";
 
 // Create an advanced VPC with 3 AZs and custom configurations
 const vpc = new Vpc("advanced-vpc", {
